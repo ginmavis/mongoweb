@@ -12,6 +12,20 @@ b6 : npm add ejs --offline
 
 //thay vì gán nên mỗi khi truy cập sẽ query lại khi người dùng try cập lại 1 lần
 
-//mean index.js
+// commit -m 'truyên data dùng query'
+
 tại dòng số 7 khi khai báo nó sẽ mang giá trị underfiled
-sau đó nó sẽ connect database thành công sẽ khởi động sever
+nó sẽ giúp chúng ta query db(truy vấn db)
+sau đó nó sẽ connect database thành công mới  khởi động sever
+gán  wordsCollection = db.collection('customers');
+sau tìm và khai báo render (truy cập biến  wordsCollection.find().toArray())
+tra về 1 promise => có được Array và .then render ra dữ liệu
+
+b1 khai báo tận cùng
+b2 lúc có rồi thì gán bằng toàn cuc vào wordsCollection
+b3 try vấn và render bằng promise
+
+
+
+
+
