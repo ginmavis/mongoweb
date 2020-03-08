@@ -36,5 +36,5 @@ client.connect()
         wordsCollection = dbo.collection('customers');
 
     })
-    .then(result => arrWords = result)
-    .catch(err => console.log(err.message))
+
+.catch(err => console.log(err.message))

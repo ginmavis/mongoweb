@@ -23,8 +23,11 @@ tra về 1 promise => có được Array và .then render ra dữ liệu
 
 b1 khai báo tận cùng
 b2 lúc có rồi thì gán bằng toàn cuc vào wordsCollection
-b3 try vấn và render bằng promise
+b3 (query)try vấn xong mới render render bằng promise
 
+theo bản chất nodejs là không cần đóng sever
+mỗi người truy cập đến sẽ trả cho mỗi người 1 db
+chỉ cần dùng 1 biến là connect không cần dùng post get  
 
 
 
