@@ -1,0 +1,17 @@
+b1 : npm init -y
+b2 : npm  install express
+b3 : npm install mongodb
+b4 : npm add express 
+b5 : npm add express --offline
+b6 : npm add ejs --offline
+
+
+//commit m-'truyen data in database sang web'
+// không làm theo cách để arrwords=[] vì nó là biến tận cùng
+// mỗi khi thêm,sửa, xóa dữ liệu database sẽ lại phải load lại biến này
+
+//thay vì gán nên mỗi khi truy cập sẽ query lại khi người dùng try cập lại 1 lần
+
+//mean index.js
+tại dòng số 7 khi khai báo nó sẽ mang giá trị underfiled
+sau đó nó sẽ connect database thành công sẽ khởi động sever
