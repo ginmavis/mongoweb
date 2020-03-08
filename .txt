@@ -1,3 +1,0 @@
-b1 : npm init -y
-b2 : npm  install express
-b3 : npm install mongodb

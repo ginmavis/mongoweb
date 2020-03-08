@@ -9,6 +9,14 @@
 
 <body>
     <h3>words </h3>
+    <% arrWords.forEach(e=> {%>
+        <h3>
+            <%= e.en %>
+        </h3>
+        <p>
+            <%= e.vn %>
+        </p>
+        <%});%>
 </body>
 
 </html>
