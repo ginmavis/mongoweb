@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 
 const express = require('express');
 
-let arrWords = [{ en: 'A', vn: 'b' }, { en: 'C', vn: 'D' }];
+let arrWords = [];
 
 // let wordsCollection;
 
@@ -25,19 +25,6 @@ const url = 'mongodb://localhost:27017/mydb';
 client = new MongoClient(url, { useUnifiedTopology: true })
 
 
-//mongo w3 school
-// client.connect((err, db) => {
-//      app.listen(3000, () => console.log('servser started'))
-//     if (err) throw err;
-//     var dbo = db.db("mydb");
-
-//     dbo.collection("customers").find({}).toArray((err, result) => {
-//         if (err) throw err;
-//         console.log(result);
-//         db.close();
-//     });
-
-// });
 
 //mongoweb
 client.connect()
@@ -47,5 +34,5 @@ client.connect()
         const words = dbo.collection('customers');
         return words.find().toArray();
     })
-    .then(result => console.log(result))
+    .then(result => arrWords = result)
     .catch(err => console.log(err.message))

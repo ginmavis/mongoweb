@@ -9,14 +9,28 @@
 
 <body>
     <h3>words </h3>
-    <% arrWords.forEach(e=> {%>
-        <h3>
-            <%= e.en %>
-        </h3>
-        <p>
-            <%= e.vn %>
-        </p>
-        <%});%>
+    <table border="1" style="border-collapse:collapse;text-align: center;" cellpadding="15">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </tr>
+
+        <% arrWords.forEach(e=> {%>
+            <tr>
+                <td>
+                    <%= e._id %>
+                </td>
+
+                <td>
+                    <%= e.name %>
+                </td>
+                <td>
+                    <%= e.adress %>
+                </td>
+                <%});%>
+            </tr>
+    </table>
 </body>
 
 </html>
